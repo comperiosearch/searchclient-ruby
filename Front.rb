@@ -9,7 +9,7 @@ module Front
 
     
       get ':search' do
-        client = Elasticsearch::Client.new ENV['ES_SERVER'] log: true
+        client = Elasticsearch::Client.new host: ENV['ES_SERVER'], log: true
         
         response = client.search index: ENV['ES_INDEX'],
                          body: {   query: 
