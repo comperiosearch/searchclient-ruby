@@ -1,35 +1,38 @@
-#FRONT.RUBY
+#SEARCHCLIENT.RUBY
 This is intended as an extremely simple middleware for elasticsearch
-It uses the elasticsearch ruby client and Grape, "An opinionated micro-framework for creating REST-like APIs in Ruby. 
-http://intridea.github.io/grape "
+It uses the [Elasticsearch Ruby client](https://github.com/elasticsearch/elasticsearch-ruby) and [Grape](http://intridea.github.io/grape), "An opinionated micro-framework for creating REST-like APIs in Ruby"
+
 
 The current implementation allows to send a query  into elasticsearch, and dump the raw response from elasticsearch.
 The server runs on localhost:9292 as default,  
 Sample request:
 
-	http://localhost:9292/query=ipa
-
+```html
+	http://localhost:9292/search?query=ipa
+```
 ##Requirements
-ruby version 1.9.3
+tested in ruby version 1.9.3 and version 2.0
 
-ruby dev tools (for grape, on windows)
+## Installation
 
-And you should do some gem install
+To install the necessary packages:
 
-    gem install elasticsearch
-    gem install grape
-    gem install rack
-    gem install elasticsearch
+		sudo bundle install
 
+on windows you may need to install ruby dev tools  
+ 
 
 
 #RUNNING THE SERVER
 type in the following command
 
-    
+   
     rackup
+
+
+
 ##CONFIGURATION
 .env file contains settings for elasticsearch server and index
 
- ##TODO
- use bundler to specify list of gems
+		ES_SERVER=http://localhost:9200
+		ES_INDEX=myIndex

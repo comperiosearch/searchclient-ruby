@@ -1,5 +1,4 @@
-# config.ru
 require 'rack'
 require 'grape'
-require '.\Front.rb'
-run Front::API 
+require File.expand_path('../SearchClient', __FILE__)
+run SearchClient::API

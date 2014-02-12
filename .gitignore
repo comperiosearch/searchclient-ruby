@@ -1,2 +1,4 @@
+.idea
 .vagrant
 .DS_Store
+*.lock
