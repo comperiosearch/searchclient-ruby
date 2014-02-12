@@ -1,10 +1,12 @@
 #SEARCHCLIENT.RUBY
-This is intended as an extremely simple middleware for elasticsearch
+This is intended as an extremely simple starting point for creating middleware for Elasticsearch, a place to manage queries and results.
 It uses the [Elasticsearch Ruby client](https://github.com/elasticsearch/elasticsearch-ruby) and [Grape](http://intridea.github.io/grape), "An opinionated micro-framework for creating REST-like APIs in Ruby"
 
 
-The current implementation allows to send a query  into elasticsearch, and dump the raw response from elasticsearch.
-The server runs on localhost:9292 as default,  
+The current implementation allows to send a query  into Elasticsearch, and dump the raw response.
+
+The server runs on localhost:9292 as default.
+
 Sample request:
 
 ```html
