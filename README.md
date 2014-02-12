@@ -3,7 +3,7 @@ This is intended as an extremely simple starting point for creating middleware f
 It uses the [Elasticsearch Ruby client](https://github.com/elasticsearch/elasticsearch-ruby) and [Grape](http://intridea.github.io/grape), "An opinionated micro-framework for creating REST-like APIs in Ruby"
 
 
-The current implementation allows to send a query  into Elasticsearch, and dump the raw response.
+The current implementation allows you to pass a query into Elasticsearch using the "query" parameter, it will do a match query on the _all field, and write out the unmodified JSON response.
 
 The server runs on localhost:9292 as default.
 
