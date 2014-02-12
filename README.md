@@ -35,4 +35,6 @@ type in the following command
 .env file contains settings for elasticsearch server and index
 
 		ES_SERVER=http://localhost:9200
-		ES_INDEX=myIndex
+		ES_INDEX=
+		
+To search in your preferred index, set the ES_INDEX option
